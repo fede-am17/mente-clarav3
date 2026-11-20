@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mente Clara | Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header class="cabecera">
+
+        <div class="cabecera-interior">
+
+            <a href="index.html" class="logo">
+
+                <span class="logo-icono">🧠</span>
+
+                Mente Clara
+
+            </a>
+
+            <button type="button" class="boton-menu-movil" id="boton-menu" aria-label="Abrir menú" aria-expanded="false">☰ Menú</button>
+
+            <nav class="menu">
+
+                <a href="index.html">Inicio</a>
+
+                <a href="informate.html">Infórmate</a>
+
+                <a href="mitos.html">Mitos</a>
+
+                <a href="quiz.html" class="activo">Quiz</a>
+
+                <a href="recursos.html">Recursos</a>
+
+                <a href="contacto.html">Contacto</a>
+
+                <a href="nosotros.html">Nosotros</a>
+
+            </nav>
+
+            <button type="button" class="boton-tema" id="boton-tema" aria-label="Cambiar tema">🌙 Tema oscuro</button>
+
+        </div>
+
+    </header>
+
+    <main id="contenido-principal">
+
+        <section class="titulo-pagina">
+
+            <div class="contenedor">
+
+                <span class="etiqueta">
+
+                    PON A PRUEBA TUS CONOCIMIENTOS
+
+                </span>
+
+                <h1>
+
+                    ¿Cuánto sabes sobre
+
+                    <span>prevención?</span>
+
+                </h1>
+
+                <p>
+
+                    Demuestra lo que aprendiste respondiendo
+                    diez preguntas sobre la prevención del consumo
+                    de sustancias controladas.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="seccion instrucciones-quiz">
+
+            <div class="contenedor">
+
+                <div class="caja-destacada">
+
+                    <h2>Antes de comenzar</h2>
+
+                    <p>
+
+                        Lee cuidadosamente cada pregunta y selecciona
+                        una sola respuesta. Después de elegir, recibirás
+                        una explicación sobre tu respuesta.
+
+                    </p>
+
+                    <ul>
+
+                        <li>
+                            El cuestionario contiene 10 preguntas.
+                        </li>
+
+                        <li>
+                            Cada respuesta correcta vale 1 punto.
+                        </li>
+
+                        <li>
+                            No podrás cambiar una respuesta seleccionada.
+                        </li>
+
+                        <li>
+                            Al finalizar conocerás tu puntuación.
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="seccion cuestionario">
+
+            <div class="contenedor">
+
+                <div class="cuestionario-caja">
+
+                    <div id="inicio-quiz" class="inicio-quiz">
+
+                        <h2>
+
+                            ¿Estás listo para comenzar?
+
+                        </h2>
+
+                        <p>
+
+                            Demuestra cuánto sabes sobre la prevención
+                            del consumo de sustancias controladas.
+
+                        </p>
+
+                        <button
+                            type="button"
+                            id="iniciar-quiz"
+                            class="boton boton-principal">
+
+                            Iniciar Quiz
+
+                        </button>
+
+                    </div>
+
+                    <div id="zona-preguntas" hidden>
+
+                        <div class="quiz-cabecera">
+
+                            <h2>
+
+                                Cuestionario educativo
+
+                            </h2>
+
+                            <p id="numero-pregunta">
+
+                                Pregunta 1 de 10
+
+                            </p>
+
+                        </div>
+
+                        <div class="barra-progreso">
+
+                            <div id="progreso"></div>
+
+                        </div>
+
+                        <div id="contenido-pregunta">
+
+                        </div>
+
+                        <div id="explicacion-pregunta" hidden>
+
+                        </div>
+
+                        <div class="botones-quiz">
+
+                            <button
+                                type="button"
+                                id="siguiente-pregunta"
+                                class="boton boton-principal"
+                                hidden>
+
+                                Siguiente pregunta
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div id="resultado" class="resultado" hidden>
+
+                        <h2>
+
+                            ¡Cuestionario terminado!
+
+                        </h2>
+
+                        <p>
+
+                            Tu puntuación final es:
+
+                        </p>
+
+                        <h3 id="puntaje-final">
+
+                            0 / 10
+
+                        </h3>
+
+                        <p id="mensaje-resultado">
+
+                        </p>
+
+                        <button
+                            type="button"
+                            id="reiniciar-quiz"
+                            class="boton boton-principal">
+
+                            Volver a intentarlo
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="mensaje-final">
+
+            <div class="contenedor">
+
+                <h2>
+
+                    ¡Sigue aprendiendo!
+
+                </h2>
+
+                <p>
+
+                    La información y la prevención son herramientas
+                    importantes para construir un futuro saludable.
+
+                </p>
+
+                <a href="recursos.html" class="boton boton-blanco">
+
+                    Explorar recursos
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="pie">
+
+        <div class="contenedor">
+
+            <div class="pie-cuadricula">
+
+                <div>
+
+                    <h3>Mente Clara</h3>
+
+                    <p>
+
+                        Proyecto educativo de prevención del consumo
+                        de sustancias controladas.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <h3>Navegación</h3>
+
+                    <a href="index.html">Inicio</a>
+
+                    <a href="informate.html">Infórmate</a>
+
+                    <a href="mitos.html">Mitos</a>
+
+                </div>
+
+                <div>
+
+                    <h3>Proyecto</h3>
+
+                    <a href="recursos.html">Recursos</a>
+
+                    <a href="contacto.html">Contacto</a>
+
+                    <a href="nosotros.html">Nosotros</a>
+
+                </div>
+
+            </div>
+
+            <div class="pie-inferior">
+
+                <p>
+
+                    Mente Clara - Proyecto Diseño Web 2026
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="quiz.js"></script>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
